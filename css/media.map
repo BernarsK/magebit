@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "media.css",
+	"sources": [
+		"../scss/media.scss"
+	],
+	"sourcesContent": [
+		"@mixin desktop {\r\n    @media (min-width: 1025px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n@mixin before-desktop {\r\n    @media (max-width: 1024px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n@mixin tablet {\r\n    @media (max-width: 1024px) and (min-width: 768px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n@mixin after-mobile {\r\n    @media (min-width: 768px) {\r\n        @content;\r\n    }\r\n}\r\n\r\n@mixin mobile {\r\n    @media (max-width: 767px) {\r\n        @content;\r\n    }\r\n}"
+	],
+	"names": [],
+	"mappings": ""
+}

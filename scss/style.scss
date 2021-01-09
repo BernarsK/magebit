@@ -1,0 +1,456 @@
+/* Import media breakpoints */
+@import 'media';
+
+/* Default to 0 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #6A707B;
+    text-decoration: none;
+}
+
+/* h2 p hr defaults */
+h2{
+    margin-left: 140px;
+    width: 400px;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+    color: #131821;
+    margin-bottom: 15px;
+    @include mobile{
+        font-size: 24px;
+        line-height: 34px;
+        margin-left: 20px;
+        padding-top: 30px;
+    }
+}
+
+p{
+    margin-left: 140px;
+    width: 400px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6A707B;
+    @include mobile{
+        font-size: 14px;
+        line-height: 24px;
+        margin-left: 20px;
+        width:295px;
+    }
+}
+
+hr{
+    margin-top: 51px;
+    margin-left: 140px;
+    width: 400px; 
+    @include mobile{
+        margin-top:20px;
+        margin-left:20px;
+        width:295px;
+    }
+}
+
+.wrapper{
+    height: 100%;
+}
+
+/* LEFT SIDE CONTENT */
+.base {
+    position: absolute;
+    width: 680px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+    @include mobile{
+        width: 100vw;
+        height:100vw;
+        background: none;
+    }
+}
+
+/* LEFT SIDE CONTENT */
+.topbar {
+    position: absolute;
+    width: 480px;
+    height: 40px;
+    left: 100px;
+    top: 100px;
+    @include mobile{
+        top: 10px;
+        left: 20px;
+        width: 100%;
+        height: 66px;
+    }
+}
+
+.top-img{
+    float: left;
+}
+
+/* LEFT SIDE CONTENT (NAVBAR) */
+.navbar{
+    margin-top: 15px;
+    margin-left: 231px;
+    @include mobile{
+        margin-left: 129px;
+        background: #fff;
+    }
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    @include mobile{
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+.navbar a:hover{
+    color: #4066A5;
+}
+
+.navbar ul li{
+    margin-right: 26px;
+    @include mobile{
+        margin-right:20px;
+    }
+}
+
+.navbar ul > li:last-child  {
+    margin-right: 0px;
+} 
+
+.navbar ul li {
+    display: inline;
+}
+/* END OF NAVBAR */
+
+.union-img {    
+    width: 25px;
+    height: 40px;
+}
+
+.pineapple-img {
+    padding-left: 11px;
+    padding-bottom: 4px;
+    width: 78px;
+    height: 16px;
+    @include mobile{
+        display: none;
+    }
+}
+
+/* MAIN LEFT SIDE CONTENT */
+.content{
+    margin-top: 374px;
+    @include mobile{
+        margin-top:254px;
+        margin-left: 20px;
+        width: 335px;
+        height: 371px;
+        background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+    }
+}
+
+/* RIGHT SIDE MAIN IMG */
+.right-img img{
+    position: fixed;
+    margin-left: 680px;
+    max-height: 1080px;
+    max-width: 1240px;
+    height: 100%;
+    width: 100%;
+    @include mobile{
+        width:1119px;
+        margin-left: -371px;
+        top:66px;
+        height:746px;
+    }
+}
+
+/* LEFT SIDE CONTENT */
+/* EMAIL BOX */
+.content .email-box{
+    margin-left: 100px;
+    margin-top: 50px;
+    height: 70px;
+    width: 663px;
+    text-indent: 40px;
+    border: 0px;
+    @include mobile{
+        margin-left:20px;
+        margin-top:20px;
+        width:295px;
+        height:60px;
+        text-indent:20px;
+    }
+}
+
+/* email button */
+.email-form button {
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 700px;
+    width: 24px;
+    height: 14px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    @include mobile{
+        margin-top:42px;
+        margin-left: -40px;
+    }
+}
+
+.email-form .line-img{
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 100px;
+    width: 4px;
+    height: 70px;
+    @include mobile{
+        margin-top:20px;
+        position:absolute;
+        height:60px;
+        margin-left:-300px;
+    }
+}
+
+/* ERROR MESSAGE STYLING (email)*/
+.email-form label{
+    position: absolute;
+    margin-left: 140px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6A707B;
+    @include mobile{
+        line-height:24px;
+        margin-left:20px;
+        width:227px;
+    }
+}
+
+#email-error{
+    @include mobile{
+        position: absolute;
+        margin-left:-300px;
+        margin-top:75px;
+        font-size:10px;
+        width:295px;
+    }
+}   
+
+#tosbox-error{
+    margin-top: 20px;
+    @include mobile{
+        font-size:10px;
+        width:295px;
+    }
+}
+
+.error-field{
+    margin-left: 100px;
+}
+
+.content .email-box:hover {
+    background: #FFFFFF;
+    border: 1px solid #4066A5;
+    box-sizing: border-box;
+    box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+}
+
+/* terms of service */
+
+.tos-content-line {
+    margin-top: 54px;
+    margin-left: 140px;
+    @include mobile{
+        margin-top:20px;
+        margin-left: 20px;
+    }
+}
+
+.tos-box{
+    width: 24px;
+    height: 24px;
+}
+
+.tos-content-line label{
+    margin-left: 15px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #6A707B;
+}
+
+/* black color for underlined tos text */
+.color-black{
+    color: #131821;
+}
+
+
+/* LEFT SIDE CONTENT - social icons */
+.social-icons{
+    margin-top: 50px;
+    margin-left: 218px;
+    @include mobile{
+        margin-left:53px;
+        margin-top:20px;
+    }
+}
+
+.social-icons ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;  
+}
+
+.social-icons ul li{
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.dot {
+    height: 46px;
+    width: 46px;
+    border: 2px solid #E3E3E4;
+    box-sizing: border-box;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.social-img{ 
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -30px;
+}
+
+.social-img ul li:first-child  {
+    margin-left: 100px;
+} 
+
+
+/* hover effects for each icon */
+.fb-base:hover{
+    cursor: pointer;
+    height: 46px;
+    width: 46px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: #4267b2;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.ig-base:hover{
+    cursor: pointer;
+    height: 46px;
+    width: 46px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: #C13584;
+    .social-img { 
+        color: #fff;
+    }
+}
+
+
+.tw-base:hover{
+    cursor: pointer;
+    height: 46px;
+    width: 46px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: #1DA1F2;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.yt-base:hover{
+    cursor: pointer;
+    height: 46px;
+    width: 46px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: #FF0000;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.test{
+    background-image: url('../img/ic_facebook.svg');
+    background-size: 100% 100%;
+    background-color: green;
+}
+
+.fix-margin{
+    margin-left: -27px
+}
+
+/* style for success.html */
+.content2{
+    margin-top: 269px;
+    @include mobile{
+    margin-top:254px;
+    margin-left: 20px;
+    width: 335px;
+    height: 371px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+    }
+}
+
+.cup-img{
+    margin-left: 140px;
+    margin-bottom: 30px;
+    @include mobile{
+        margin-left:20px;
+        margin-top:30px;
+        margin-bottom:0px;
+    }
+}
+
+.content2 p{
+    margin-bottom: 50px;
+    @include mobile{
+        margin-bottom:40px;
+    }
+}
+
+.content2 h2{
+    padding-top:0px;    
+    margin-top:40px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table{
+    margin-top:20px;
+    margin-bottom:20px;
+}
